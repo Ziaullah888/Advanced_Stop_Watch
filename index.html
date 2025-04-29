@@ -3,23 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STOP WATCH</title>
+    <title>Elegant Stopwatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-
-    <h1 id="myH1">Stop Watch</h1>
-
-    <div id="container">
-        <div id="display">00:00:00:00</div>
-
-        <div id="controls">
-            <button id="startBtn" onclick="start()">Start</button>
-            <button id="stopBtn"  onclick="stop()">Stop</button>
-            <button id="resetBtn" onclick="reset()">Reset</button>
-        </div>
+    <div class="particles">
+        <!-- Particles will be added by JavaScript -->
     </div>
-    
+
+    <div class="wrapper">
+        <header>
+            <h1 id="myH1">Elegant Stopwatch</h1>
+        </header>
+
+        <main id="container">
+            <div class="display-container">
+                <div id="display">
+                    <div class="time-section">
+                        <span class="time hours">00</span>
+                        <span class="label">hours</span>
+                    </div>
+                    <span class="separator">:</span>
+                    <div class="time-section">
+                        <span class="time minutes">00</span>
+                        <span class="label">minutes</span>
+                    </div>
+                    <span class="separator">:</span>
+                    <div class="time-section">
+                        <span class="time seconds">00</span>
+                        <span class="label">seconds</span>
+                    </div>
+                    <span class="separator">:</span>
+                    <div class="time-section">
+                        <span class="time milliseconds">00</span>
+                        <span class="label">ms</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="controls">
+                <button id="startBtn">
+                    <i class="fas fa-play"></i>Start
+                </button>
+                <button id="stopBtn">
+                    <i class="fas fa-pause"></i>Stop
+                </button>
+                <button id="resetBtn">
+                    <i class="fas fa-redo"></i>Reset
+                </button>
+            </div>
+
+            <div class="bottom-section">
+                <div class="stats-panel">
+                    <div class="stat-box">
+                        <div class="stat-label">Best Lap</div>
+                        <div class="stat-value" id="bestLap">--:--:--</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Average</div>
+                        <div class="stat-value" id="avgLap">--:--:--</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Laps</div>
+                        <div class="stat-value" id="totalLaps">0</div>
+                    </div>
+                </div>
+
+                <div class="lap-times">
+                    <h3>LAP HISTORY</h3>
+                    <div class="lap-container" id="lapContainer"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
