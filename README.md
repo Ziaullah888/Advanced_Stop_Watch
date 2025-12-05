@@ -33,7 +33,7 @@ No installation required! This is a pure HTML/CSS/JavaScript application that ru
 
 1. Clone the repository:
 ` ash
-git clone https://github.com/yourusername/Advanced_Stop_Watch.git
+git clone https://github.com/ziaullah888/Advanced_Stop_Watch.git
 ` 
 
 2. Navigate to the project directory:
@@ -110,7 +110,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ##  Author
 
-Created with  by [Your Name]
+Created with  by [Zia Ullah]
 
 ---
 
