@@ -78,9 +78,9 @@ cd Advanced_Stop_Watch
 ` 
 Advanced_Stop_Watch/
 
- index.html          # Main HTML structure
- style.css           # All styling and animations
- app.js              # Stopwatch logic and functionality
+- index.html          # Main HTML structure
+- style.css           # All styling and animations
+- app.js              # Stopwatch logic and functionality
  README.md          # Project documentation
 ` 
 
